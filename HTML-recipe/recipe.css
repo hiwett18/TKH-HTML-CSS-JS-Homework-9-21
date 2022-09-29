@@ -1,0 +1,55 @@
+:root{
+    background-color: bisque;
+    font-size: larger;
+    
+}
+
+.container {
+    width:100%;
+    text-align:center;
+    background-color: bisque;
+    height: auto;
+
+}
+
+.left {
+    float:left;
+    width:100px;
+    height: 100px;
+    background-color: bisque;
+
+}
+
+.center {
+    display: inline-block;
+    margin:0 auto;
+    width:auto;
+    height: auto;
+    text-align: center;
+
+}
+.image-contaier {
+    text-align: center;
+    display: block;
+    
+
+}
+ul {
+    font-style: oblique;
+}
+p {
+    font-style: oblique;
+}
+
+.right {
+    float:right;
+    width:100px;
+    height: 100px;
+    background-color: bisque;
+
+}
+
+footer {
+    height: 10px;
+    background-color: bisque;
+}

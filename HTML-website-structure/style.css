@@ -1,138 +1,112 @@
 /* || General setup */
-
-html, body {
-  margin: 0;
-  padding: 0;
+:root{
+  background-color: rgb(183, 181, 181);
 }
 
-html {
-  font-size: 10px;
-  background-color: #a9a9a9;
-}
-
-body {
-  width: 70%;
-  min-width: 800px;
-  margin: 0 auto;
-}
-
-/* || typography */
-
-h1, h2, h3 {
-  font-family: 'Cinzel Decorative', cursive;
-  color: #2a2a2a;
-}
-
-p, input, li {
-  font-family: 'Roboto Condensed', sans-serif;
-  color: #2a2a2a;
-}
-
-h1 {
-  font-size: 4rem;
-  text-align: center;
-  text-shadow: 2px 2px 10px black;
-}
-
-h2 {
-  font-size: 3rem;
-  text-align: center;
-}
-
-h3 {
-  font-size: 2.2rem;
-}
-
-p, li {
-  font-size: 1.6rem;
-  line-height: 1.5;
-}
-
-/* || header layout */
-
-header {
-  margin-bottom: 10px;
-  display: flex;
-  flex-flow: row wrap;
-}
-
-body > * {
-  background-color: red;
-  padding: 1%;
-}
-
-main, header, nav, article, aside, footer, section {
-  background-color: rgba(0,255,0,0.5);
-  padding: 1%;
-}
-
-h1 {
-  flex: 5;
-  text-transform: uppercase;
-}
-
-header img {
-  display: block;
-  height: 60px;
-  padding-top: 20.15px;
-}
-
-nav {
-  height: 50px;
-  flex: 100%;
-  display: flex;
-}
-
-nav ul {
-  padding: 0;
-  list-style-type: none;
-  flex: 2;
-  display: flex;
-}
-
-nav li {
-  display: inline;
-  text-align: center;
-  flex: 1;
-}
-
-nav a, nav span {
-  display: inline-block;
-  font-size: 2rem;
-  height: 3rem;
-  line-height: 1.7;
-  text-transform: uppercase;
-  text-decoration: none;
+.header-container {
   color: black;
-
-}
-
-/* || main layout */
-
-main {
+  background-color: lightgreen;
   display: flex;
+  font-family: 'Apple Chancery';
+  font-weight: bolder;
+  font-stretch: ultra-expanded;
+  /* horizontally centers content */
+  justify-content: center;
+  
+  
 }
 
-article, section {
-  flex: 4;
+
+
+.header {
+  width: 500px;
+  /* setting the height here dictates the height of the row
+  if it is not set with the height property, rows will be automatically be the height of their content
+  */
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+
+  /* vertically centers content */
+  /* align-items: center; */
+  
+}
+.header, .logo{
+  align-items: center;
 }
 
-aside {
-  flex: 1;
-  margin-left: 10px;
-  padding: 1%;
+.bird-img{
+  width: 50px;
+  height: 50px;
+  align-self: flex-end;
+  margin-bottom: 20px;
 }
 
-aside a {
-  display: block;
+.menu-container {
+  color: #fff;
+  background-color:lightgreen;
+  /* Blue */
+  
+
+  /* makes the menu-container element a flex container 
+    enables flexbox layout mode - other flexbox properties 
+    will be ignored by the browser if we do not add this */
+  
+
+  /* define the horizontal alignment of the flex container's items */
+  justify-content: space-around;
+}
+
+
+.menu-header {
+  border: 30px solid greenyellow;
+  background-color: greenyellow;
+  /* width: 1000px; */
+  /* .menu element is a nested flex container */
+  display: flex;
+  /* distritbute child elements equally */
+  justify-content: space-around;
+  margin: 10px 0px 10px 0px; 
+  color: black;
+}
+
+
+.middle{
+  background-color: lightgreen;
+  padding: 200px; 
+  display: flex;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  /* align-items:center; */
+}
+
+.float-child1 {
+  background-color:  greenyellow;
+  width: 1000px;
   float: left;
-  width: 50%;
+  padding: 20px;
+  border: 2px solid red;
+   
+} 
+.float-child2 {
+  background-color:  greenyellow;
+  width: 1000px;
+  float: left;
+  display: flex;
+  padding: 20px;
+  border: 2px solid red;
+  flex-direction: row;
+  
+} 
+
+
+.img{
+  width: 120px;
+  height: 120px;
 }
 
-aside img {
-  max-width: 100%;
-}
-
-footer {
-  margin-top: 10px;
+.footer{
+  background-color: lightgreen;
+  height: 100px;
 }
